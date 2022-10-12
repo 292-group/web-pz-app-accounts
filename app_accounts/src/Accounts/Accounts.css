@@ -1,0 +1,107 @@
+.accounts{
+    display: grid;
+    grid-template-rows: 70px 70px auto;
+    grid-template-columns: max-content;
+    justify-content: center;
+}
+.header-with-create{
+    display: grid;
+    grid-template-columns: 200px 150px;
+    padding: 10px;
+    justify-content: space-between;
+
+}
+.total{
+    display: grid;
+    padding:15px;
+    width: auto;
+}
+.account-list{
+    display: grid;
+    padding: 20px 0;
+}
+th{
+    font-weight: bold;
+}
+.create-btn{
+background-color: #046ff3;
+color: white;
+border-radius: 5px;
+border: 0px;
+padding: 0 5px;
+height: 50px;
+
+}
+.h2{
+    font-weight: 600;
+    font-size: 35px;
+    width: 300px;
+}
+
+.header-with-create{
+    min-width: 1000px;
+   
+}
+
+.total{
+    
+    background-color: #badce6;
+    min-width: 970px;
+    border-radius: 5px ;
+}
+
+td,th{
+    border-bottom:solid rgb(91, 90, 90) 1px; 
+    padding: 20px;
+    text-align: center;
+   } 
+
+   .edit-btn{
+    background-color: #1896aa;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 2px;
+   }
+
+   .delete-btn{
+    background-color: #606970;
+    color: white;
+    border: none;
+    border-radius: 2px;
+   }
+   .edit-delete-btns{
+    display: grid;
+    grid-template-columns: 60px 80px;
+    grid-gap: 10px;
+   }
+   .name{
+    text-decoration: none;
+    color: black;
+   }
+   .name-td{
+    cursor: pointer;
+   }
+   .name:hover{
+    color: orange;
+   }
+
+   .status-yellow{
+    background-color: #fcbc0b;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+   }
+   .status-red{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+   }
+   .status-blue{
+    background-color: #046df5;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+   }
+ 

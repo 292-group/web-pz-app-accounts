@@ -1,0 +1,22 @@
+.info{
+    /* width: 400px; */
+    font-size: 30px;
+}
+.about-us{
+    display: grid;
+    grid-template-columns: 300px 700px;
+    justify-content: center;
+    padding: 30px;
+}
+.span-header{
+    display: grid;
+    font-weight: 700;
+    width: 100%;
+    padding: 20px 0px;
+    justify-content: center;
+}
+.a{
+    text-decoration: none;
+    color: black;
+
+}

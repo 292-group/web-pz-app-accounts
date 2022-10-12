@@ -1,0 +1,26 @@
+.account-info-li{
+   
+}
+.span-info{
+    color: #cc4a12;
+    /* padding: 10px; */
+    font-weight: 600;
+}
+p{
+    color: black;
+}
+.about-account{
+    display: grid;
+    justify-content: center;
+    padding-top: 50px;
+    font-size: 30px;
+}
+.account-info-ul{
+    display: grid;
+    grid-template-rows: repeat(6,60px);
+}
+h2{
+    font-size: 50px;
+    padding-bottom: 30px;
+    
+}
