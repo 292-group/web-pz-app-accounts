@@ -1,51 +1,6 @@
 {
   "accounts": [
     {
-      "id": 1,
-      "name": "Preston",
-      "account_name": "pstitfall0",
-      "email": "pstitfall0@a8.net",
-      "status": "Pending",
-      "start_date": "1532119949",
-      "expiration_date": "1521326476"
-    },
-    {
-      "id": 2,
-      "name": "Catlee",
-      "account_name": "cronald1",
-      "email": "cronald1@technorati.com",
-      "status": "Disable",
-      "start_date": "1526056333",
-      "expiration_date": "1526880054"
-    },
-    {
-      "id": 3,
-      "name": "Balduin",
-      "account_name": "bblankley2",
-      "email": "bblankley2@usatoday.com",
-      "status": "Disable",
-      "start_date": "1529306250",
-      "expiration_date": "1511298169"
-    },
-    {
-      "id": 5,
-      "name": "Horatio",
-      "account_name": "hedgin4",
-      "email": "hedgin4@cbc.ca",
-      "status": "Pending",
-      "start_date": "1518716553",
-      "expiration_date": "1526741837"
-    },
-    {
-      "id": 8,
-      "name": "Celisse",
-      "account_name": "ccansdall7",
-      "email": "ccansdall7@list-manage.com",
-      "status": "Disable",
-      "start_date": "1511555049",
-      "expiration_date": "1526153884"
-    },
-    {
       "id": 9,
       "name": "Bartram",
       "account_name": "bmalyan8",
@@ -62,15 +17,6 @@
       "status": "Disable",
       "start_date": "1532484796",
       "expiration_date": "1518477717"
-    },
-    {
-      "id": 11,
-      "name": "Gussie",
-      "account_name": "ghuberya",
-      "email": "ghuberya@tuttocitta.it",
-      "status": "Pending",
-      "start_date": "1533291148",
-      "expiration_date": "1532500034"
     },
     {
       "id": 12,
@@ -101,30 +47,30 @@
     },
     {
       "id": 16,
-      "name": "Vincenz",
-      "account_name": "vkenealyf",
-      "email": "vkenealyf@instagram.com",
+      "name": "Olexandr",
+      "account_name": "Andanchenko",
+      "email": "Andu@gmail.com",
       "status": "Active",
-      "start_date": "1513923802",
-      "expiration_date": "1535179356"
+      "start_date": "2022-10-08",
+      "expiration_date": "2022-10-08"
     },
     {
       "id": 17,
-      "name": "Broderic",
-      "account_name": "bboudag",
-      "email": "bboudag@bizjournals.com",
-      "status": "Disable",
-      "start_date": "1529716903",
-      "expiration_date": "1528271287"
+      "name": "Yaroslav",
+      "account_name": "Borysenko",
+      "email": "Yarik@gmail.com",
+      "status": "Active",
+      "start_date": "2022-10-08",
+      "expiration_date": "2022-10-08"
     },
     {
       "id": 18,
-      "name": "Cass",
-      "account_name": "candrivoth",
-      "email": "candrivoth@cocolog-nifty.com",
-      "status": "Disable",
-      "start_date": "1512308720",
-      "expiration_date": "1532748002"
+      "name": "Sergiy",
+      "account_name": "Sashuk",
+      "email": "Serik@gmail.com",
+      "status": "Active",
+      "start_date": "2022-10-08",
+      "expiration_date": "2022-10-08"
     },
     {
       "id": 19,
@@ -134,15 +80,6 @@
       "status": "Active",
       "start_date": "1529986937",
       "expiration_date": "1526294808"
-    },
-    {
-      "id": 20,
-      "name": "Leta",
-      "account_name": "lbeckenhamj",
-      "email": "lbeckenhamj@dagondesign.com",
-      "status": "Active",
-      "start_date": "1533073551",
-      "expiration_date": "1526244428"
     },
     {
       "id": 21,
@@ -170,15 +107,6 @@
       "status": "Pending",
       "start_date": "1514883383",
       "expiration_date": "1538477209"
-    },
-    {
-      "id": 25,
-      "name": "Corrina",
-      "account_name": "clippoo",
-      "email": "clippoo@soup.io",
-      "status": "Active",
-      "start_date": "1523339491",
-      "expiration_date": "1532147164"
     },
     {
       "id": 26,
@@ -215,23 +143,49 @@
       "status": "Disable",
       "start_date": "1517907601",
       "expiration_date": "1511524018"
-    }
-    ,
+    },
     {
-      "name": "testst updtae",
-      "account_name": "testste",
-      "email": "test@test",
+      "id": 32,
+      "name": "Bohdan",
+      "account_name": "Klumschuk",
+      "email": "Bodia@gmail.com",
       "status": "Active",
-      "start_date": 1636235999,
-      "expiration_date": 1636235999,
-      "id": 32
+      "start_date": "2022-10-08",
+      "expiration_date": "2022-10-08"
+    },
+    {
+      "id": 37,
+      "name": "Alex",
+      "account_name": "Pezdenko",
+      "email": "оимомлп",
+      "status": "Active",
+      "start_date": "2022-10-08",
+      "expiration_date": "2022-10-08"
+    },
+    {
+      "id": 38,
+      "name": "Grysha",
+      "account_name": "Kropyva",
+      "email": "grysha@gmail.com",
+      "status": "Disable",
+      "start_date": "2018-01-11",
+      "expiration_date": "2022-10-08"
+    },
+    {
+      "id": 39,
+      "name": "Andrii",
+      "account_name": "Mychka",
+      "email": "i.muchka73@gmail.com",
+      "status": "Active",
+      "start_date": "2022-10-08",
+      "expiration_date": "2022-10-08"
     }
   ],
   "frameworks": [
     {
-      "Angular_vs_React":" If the choice you are making is based on Angular vs React alone, then you will simply need to consider the pros and cons discussed for those libraries in this post. But overall, keep in mind that both libraries can be used for mobile and web apps, while Angular is generally better for more complex apps that are enterprise-ready. React often requires extra modules and components, which keeps the core library small, but means there is extra work involved when incorporating outside tools. Angular, on the other hand, is more of a full-fledged solution that does not require extras like React often does, though it does have a steeper learning curve for its core compared to React. React is more suitable for intermediate to advanced JavaScript developers who are familiar with concepts from ES6 and up, while Angular favors those same developers who are also familiar with TypeScript.",
-      "React_vs_Vue":" The choice between React vs Vue is often debated and it is not an easy one. Vue has a vibrant and ever-growing community and has taken over popularity vs. React in many respects. React developers are still churning out lots of new components and extras, so there is no sign that React is on the decline either. Vue is generally more suited to smaller, less complex apps and is easier to learn from scratch compared to React. Vue can be easier to integrate into new or existing projects and many feel its use of HTML templates along with JSX is an advantage. Overall, Vue might be the best choice if you are a newer developer and not as familiar with advanced JavaScript concepts, while React is quite well suited for experienced programmers and developers who have worked with object-oriented JavaScript, functional JavaScript, and similar concepts.",
-      "Angular_vs_Vue":"In most cases, you probably would not be deciding between only Angular and Vue. They are vastly different libraries with very different feature sets and learning curves. Vue is the clear choice for less experienced developers, and Angular would be preferred for those working on larger apps. A large library like Angular would require more diligence in keeping up with what is new, while Vue would be less demanding in this regard and the fact that the two most recent major releases of Vue are in separate repositories helps. It should also be noted that Vue was created by a developer who formerly worked on Angular for Google, so that is another thing to keep in mind, though that would not have a huge impact on your decision."
+      "Angular_vs_React": " If the choice you are making is based on Angular vs React alone, then you will simply need to consider the pros and cons discussed for those libraries in this post. But overall, keep in mind that both libraries can be used for mobile and web apps, while Angular is generally better for more complex apps that are enterprise-ready. React often requires extra modules and components, which keeps the core library small, but means there is extra work involved when incorporating outside tools. Angular, on the other hand, is more of a full-fledged solution that does not require extras like React often does, though it does have a steeper learning curve for its core compared to React. React is more suitable for intermediate to advanced JavaScript developers who are familiar with concepts from ES6 and up, while Angular favors those same developers who are also familiar with TypeScript.",
+      "React_vs_Vue": " The choice between React vs Vue is often debated and it is not an easy one. Vue has a vibrant and ever-growing community and has taken over popularity vs. React in many respects. React developers are still churning out lots of new components and extras, so there is no sign that React is on the decline either. Vue is generally more suited to smaller, less complex apps and is easier to learn from scratch compared to React. Vue can be easier to integrate into new or existing projects and many feel its use of HTML templates along with JSX is an advantage. Overall, Vue might be the best choice if you are a newer developer and not as familiar with advanced JavaScript concepts, while React is quite well suited for experienced programmers and developers who have worked with object-oriented JavaScript, functional JavaScript, and similar concepts.",
+      "Angular_vs_Vue": "In most cases, you probably would not be deciding between only Angular and Vue. They are vastly different libraries with very different feature sets and learning curves. Vue is the clear choice for less experienced developers, and Angular would be preferred for those working on larger apps. A large library like Angular would require more diligence in keeping up with what is new, while Vue would be less demanding in this regard and the fact that the two most recent major releases of Vue are in separate repositories helps. It should also be noted that Vue was created by a developer who formerly worked on Angular for Google, so that is another thing to keep in mind, though that would not have a huge impact on your decision."
     }
   ]
 }

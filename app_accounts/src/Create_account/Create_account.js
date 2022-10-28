@@ -1,52 +1,74 @@
 import './Create.account.css'
 import React from 'react';
-import db from '../db/db.accounts.json'
-// import {use}
-function CreateAccount({active,setActive,id,action,setCount,setCheckId}) {
+
+function CreateAccount({active,setActive,id,action,setCount,setCheckId,setdb,db}) {
   let nameValue=React.createRef();
   let accountValue=React.createRef();
   let emailValue=React.createRef();
   let exampleValue=React.createRef()
   let dataStartValue=React.createRef();
   let dataEndValue=React.createRef();
-  let idCount=30,numArr;
+  let idCount=0,numArr;
   let nameEdit,accountEdit,emailEdit;
 
   //filling in the fielder during edition
 if(action==="edit"){
- for(let i=0;i<db["accounts"].length;i++) if(db["accounts"][i].id===id) numArr=i;
- nameEdit=db['accounts'][numArr].name;
- accountEdit=db['accounts'][numArr].account_name;
- emailEdit=db['accounts'][numArr].email;
+ for(let i=0;i<db.length;i++) if(db[i].id===id) numArr=i;
+ nameEdit=db[numArr].name;
+ accountEdit=db[numArr].account_name;
+ emailEdit=db[numArr].email;
 }
 //func for add new accound or edit account
   const saveAllValue= ()=>{
     if(action==="edit"){
-db['accounts'].splice(numArr,1,{
-  "id": db['accounts'][numArr].id,
-      "name": `${nameValue.current.value}`,
-      "account_name": `${accountValue.current.value}`,
-      "email": `${emailValue.current.value}`,
-      "status": `${exampleValue.current.value}`,
-      "start_date": `${dataStartValue.current.value}`,
-      "expiration_date": `${dataEndValue.current.value}`
-}); 
-setCheckId(db['accounts'][numArr].id);
+ fetch(`http://localhost:3000/accounts/${db[numArr].id}`, {
+        method: 'PUT',
+        headers: {
+          'Accept': 'application/json, text/plain, */*',
+          'Content-Type': 'application/json'
+        },
+        body:JSON.stringify({ 
+          "id": db[numArr].id,
+          "name": `${nameValue.current.value}`,
+          "account_name": `${accountValue.current.value}`,
+          "email": `${emailValue.current.value}`,
+          "status": `${exampleValue.current.value}`,
+          "start_date": `${dataStartValue.current.value}`,
+          "expiration_date": `${dataEndValue.current.value}`})
+      })
+      .then((resp) => {
+        setCount(db.length);
+      }, (error) => {
+        console.error(error)
+      });
+
+setCheckId(db[numArr].id);
 }
 
     else if(action==="create"){
-      idCount=++idCount;
-    db['accounts'].push({
-      "id": idCount,
-      "name": `${nameValue.current.value}`,
-      "account_name": `${accountValue.current.value}`,
-      "email": `${emailValue.current.value}`,
-      "status": `${exampleValue.current.value}`,
-      "start_date": `${dataStartValue.current.value}`,
-      "expiration_date": `${dataEndValue.current.value}`
-    }); }
+      for(let i=0;i<db.length;i++) if(db[i].id>idCount) idCount=db[i].id;
 
-    setCount(db['accounts'].length);
+      fetch(`http://localhost:3000/accounts`, {
+        method: 'POST',headers: {
+          'Accept': 'application/json, text/plain, */*',
+          'Content-Type': 'application/json'
+        },
+        body:JSON.stringify({ 
+          "id": ++idCount,
+          "name": `${nameValue.current.value}`,
+          "account_name": `${accountValue.current.value}`,
+          "email": `${emailValue.current.value}`,
+          "status": `${exampleValue.current.value}`,
+          "start_date": `${dataStartValue.current.value}`,
+          "expiration_date": `${dataEndValue.current.value}`})
+      })
+      .then((resp) => {
+        setCount(db.length);
+      }, (error) => {
+        console.error(error)
+      });
+    }
+    setCount(db.length);
     setActive(false);
   }
   return (

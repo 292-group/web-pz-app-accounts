@@ -3,7 +3,7 @@ import './App.css';
 import Nav from './nav/Nav.tsx';
 import{ BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import AboutUs from './About_us/About_us.tsx';
-import Accounts from './Accounts/Accounts.tsx';
+import Accounts from './Accounts/Accounts';
 import AboutAccount from './About_account/About_account.tsx';
 
 const App=()=> {

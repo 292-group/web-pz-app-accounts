@@ -1,11 +1,10 @@
 import React, {useEffect} from 'react';
 import {useState} from 'react';
 import './Accounts.css'
-import database from '../db/db.accounts.json'
 import CreateAccount from '../Create_account/Create_account';
 
 const Accounts = () => {
-  const [count, setCount] = useState(undefined);
+  const [count, setCount] = useState();
 
   const [db, setdb] = useState([]);
   const [checkId, setCheckId] = useState(0);
@@ -16,11 +15,25 @@ const Accounts = () => {
   //state for transfer action(edit or create) to Create_account
   const [action, setAction] = useState("");
 
+  function timeConverter(UNIX_timestamp){
+    if (UNIX_timestamp.indexOf('-') > -1) return UNIX_timestamp;
+    else{
+    let a = new Date(UNIX_timestamp * 1000);
+    let year = a.getFullYear();
+    let month = a.getMonth()+1;
+    let date = a.getDate();
+    let time = year + '-' + month + '-' + date;
+    return time;
+    }
+   
+  }
+
   useEffect(() => {
     // GET request using fetch inside useEffect React hook
     fetch(`http://localhost:3000/accounts`, {method: 'GET'})
       .then(response => response.json()).then((data) => {
       setdb(data)
+      setCount(data.length)
     }, (error) => {
       console.error(error)
     });
@@ -79,8 +92,8 @@ const Accounts = () => {
               <td><span
                 className={item.status === "Pending" ? "status-red" : "" + item.status === "Disable" ? "status-yellow" : "" + item.status === "Active" ? "status-blue" : ""}>{item.status}</span>
               </td>
-              <td>{item.start_date}</td>
-              <td>{item.expiration_date}</td>
+              <td>{timeConverter(item.start_date)}</td>
+              <td>{timeConverter(item.expiration_date)}</td>
               <td className='edit-delete-btns'>
                 <button className="edit-btn" onClick={() => {
                   setModalActive(true);
@@ -95,8 +108,7 @@ const Accounts = () => {
           </tbody>
         </table>
       </div>
-      <CreateAccount active={modalActive} setActive={setModalActive} id={idEdit} action={action} setCount={setCount}
-                     setCheckId={setCheckId}></CreateAccount>
+      <CreateAccount active={modalActive} setActive={setModalActive} id={idEdit} action={action} setCount={setCount} setCheckId={setCheckId} setdb={setdb} db={db}></CreateAccount>
     </div>
   );
 }
