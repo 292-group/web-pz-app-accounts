@@ -4,6 +4,7 @@
 }
 .about-us{
     display: grid;
+    
     grid-template-columns: 300px 700px;
     justify-content: center;
     padding: 30px;

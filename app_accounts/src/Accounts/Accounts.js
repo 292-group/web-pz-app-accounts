@@ -25,7 +25,6 @@ const Accounts = () => {
     let time = year + '-' + month + '-' + date;
     return time;
     }
-   
   }
 
   useEffect(() => {
