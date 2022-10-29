@@ -29,13 +29,7 @@ const Accounts = () => {
 
   useEffect(() => {
     // GET request using fetch inside useEffect React hook
-    fetch(`http://localhost:3000/accounts`, {method: 'GET'})
-      .then(response => response.json()).then((data) => {
-      setdb(data)
-      setCount(data.length)
-    }, (error) => {
-      console.error(error)
-    });
+    getAccounts();
 
 // empty dependency array means this effect will only run once (like componentDidMount in classes)
   }, []);
@@ -50,12 +44,22 @@ const Accounts = () => {
       // DELETE request using fetch inside useEffect React hook
       fetch(`http://localhost:3000/accounts/${item.id}`, {method: 'DELETE'})
         .then((resp) => {
-          setdb(db)
+          getAccounts()
+          // setdb(db)
           setCount(db.length);
         }, (error) => {
           console.error(error)
         });
     }
+  }
+  function getAccounts(){
+    fetch(`http://localhost:3000/accounts`, {method: 'GET'})
+    .then(response => response.json()).then((data) => {
+    setdb(data)
+    setCount(data.length)
+  }, (error) => {
+    console.error(error)
+  });
   }
 
   return (
@@ -108,7 +112,7 @@ const Accounts = () => {
           </tbody>
         </table>
       </div>
-      <CreateAccount active={modalActive} setActive={setModalActive} id={idEdit} action={action} setCount={setCount} setCheckId={setCheckId} setdb={setdb} db={db}></CreateAccount>
+      <CreateAccount active={modalActive} setActive={setModalActive} id={idEdit} action={action} setCount={setCount} setCheckId={setCheckId} setdb={setdb} db={db} getAccounts={getAccounts}></CreateAccount>
     </div>
   );
 }

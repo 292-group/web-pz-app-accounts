@@ -1,7 +1,7 @@
 import './Create.account.css'
 import React from 'react';
 
-function CreateAccount({active,setActive,id,action,setCount,setCheckId,setdb,db}) {
+function CreateAccount({active,setActive,id,action,setCount,setCheckId,setdb,db,getAccounts}) {
   let nameValue=React.createRef();
   let accountValue=React.createRef();
   let emailValue=React.createRef();
@@ -37,6 +37,7 @@ if(action==="edit"){
           "expiration_date": `${dataEndValue.current.value}`})
       })
       .then((resp) => {
+        getAccounts();
         setCount(db.length);
       }, (error) => {
         console.error(error)
@@ -63,6 +64,7 @@ setCheckId(db[numArr].id);
           "expiration_date": `${dataEndValue.current.value}`})
       })
       .then((resp) => {
+        getAccounts();
         setCount(db.length);
       }, (error) => {
         console.error(error)
