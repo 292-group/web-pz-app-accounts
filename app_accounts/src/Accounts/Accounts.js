@@ -50,6 +50,7 @@ const Accounts = () => {
       // DELETE request using fetch inside useEffect React hook
       fetch(`http://localhost:3000/accounts/${item.id}`, {method: 'DELETE'})
         .then((resp) => {
+          setdb(db)
           setCount(db.length);
         }, (error) => {
           console.error(error)
