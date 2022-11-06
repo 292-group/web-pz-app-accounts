@@ -1,0 +1,115 @@
+.accounts-holder{
+  background-color: whitesmoke;
+  width: 900px;
+  margin: 0px auto auto auto;
+  padding-top: 70px;
+  &__title{
+    display: flex;
+    .title{
+      margin-left: 30px;
+    }
+    .create-account{
+      height: 30px;
+      width: 150px;
+      margin: auto 20px auto auto;
+      background-color: #085fff;
+      border-radius: 3px;
+      border-style: none;
+      color: white;
+    }
+    .create-account:hover{
+      background-color: #6897f8;
+    }
+  }
+  .total{
+    display: flex;
+    height: 100px;
+    background-color: rgba(0, 175, 129, 0.25);
+    p{
+      color: green;
+      margin: auto auto auto 30px;
+    }
+  }
+  .table{
+    width: 100%;
+    .buttons{
+      display: flex;
+    }
+    tr{
+      td{
+      }
+    }
+  }
+  .edit{
+    height: 30px;
+    width: 50px;
+    background-color: #013cab;
+    color: white;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  .edit:hover{
+    background-color: #0057ff;
+  }
+  .delete{
+    height: 30px;
+    background-color: #2f2f2f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  .delete:hover{
+    background-color: #b70000;
+  }
+  .profile{
+    text-decoration: none;
+    color: black;
+  }
+  .profile:hover{
+    text-decoration: underline;
+    color: orange;
+  }
+  .red{
+    .status{
+      background-color: #d30101;
+      height: 24px;
+      border-radius: 3px;
+      font-size: 14px;
+      color: whitesmoke;
+      font-weight: 900;
+      display: flex;
+      p{
+        margin: auto;
+      }
+    }
+  }
+  .yellow{
+    .status{
+      background-color: #d3c901;
+      height: 24px;
+      border-radius: 3px;
+      font-size: 14px;
+      color: black;
+      font-weight: 900;
+      display: flex;
+    p{
+      margin: auto;
+    }
+    }
+  }
+  .blue{
+    .status{
+      background-color: #0175d3;
+      height: 24px;
+      border-radius: 3px;
+      font-size: 14px;
+      color: whitesmoke;
+      font-weight: 900;
+      display: flex;
+      p{
+        margin: auto;
+      }
+    }
+  }
+}

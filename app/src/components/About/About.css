@@ -1,0 +1,30 @@
+.about-us {
+  width: 100%;
+  display: flex;
+  padding-top: 70px;
+}
+.about-us .anchors {
+  margin: 30px auto auto 250px;
+  width: 500px;
+  position: fixed;
+}
+.about-us .anchors .a {
+  text-decoration: none;
+}
+.about-us .info {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin: 30px 100px auto auto;
+}
+.about-us .info span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.about-us .info p {
+  word-wrap: break-word;
+}
+
+/*# sourceMappingURL=About.css.map */

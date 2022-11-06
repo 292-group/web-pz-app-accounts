@@ -1,0 +1,59 @@
+.content {
+  padding-top: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.content .hat {
+  width: 100%;
+  height: 150px;
+}
+.content .user {
+  width: 600px;
+  margin: 30px auto auto auto;
+}
+.content .user__row {
+  display: flex;
+}
+.content .user__row .field {
+  color: orange;
+  margin-right: 3px;
+}
+.content .red-profile .status-profile {
+  background-color: #d30101;
+  height: 24px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: whitesmoke;
+  font-weight: 900;
+  display: flex;
+}
+.content .red-profile .status-profile p {
+  margin: auto;
+}
+.content .yellow-profile .status-profile {
+  background-color: #d3c901;
+  height: 24px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: black;
+  font-weight: 900;
+  display: flex;
+}
+.content .yellow-profile .status-profile p {
+  margin: auto;
+}
+.content .blue-profile .status-profile {
+  background-color: #0175d3;
+  height: 24px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: whitesmoke;
+  font-weight: 900;
+  display: flex;
+}
+.content .blue-profile .status-profile p {
+  margin: auto;
+}
+
+/*# sourceMappingURL=Profile.css.map */

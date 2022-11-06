@@ -1,0 +1,107 @@
+.accounts-holder {
+  background-color: whitesmoke;
+  width: 900px;
+  margin: 0px auto auto auto;
+  padding-top: 70px;
+}
+.accounts-holder__title {
+  display: flex;
+}
+.accounts-holder__title .title {
+  margin-left: 30px;
+}
+.accounts-holder__title .create-account {
+  height: 30px;
+  width: 150px;
+  margin: auto 20px auto auto;
+  background-color: #085fff;
+  border-radius: 3px;
+  border-style: none;
+  color: white;
+}
+.accounts-holder__title .create-account:hover {
+  background-color: #6897f8;
+}
+.accounts-holder .total {
+  display: flex;
+  height: 100px;
+  background-color: rgba(0, 175, 129, 0.25);
+}
+.accounts-holder .total p {
+  color: green;
+  margin: auto auto auto 30px;
+}
+.accounts-holder .table {
+  width: 100%;
+}
+.accounts-holder .table .buttons {
+  display: flex;
+}
+.accounts-holder .edit {
+  height: 30px;
+  width: 50px;
+  background-color: #013cab;
+  color: white;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.accounts-holder .edit:hover {
+  background-color: #0057ff;
+}
+.accounts-holder .delete {
+  height: 30px;
+  background-color: #2f2f2f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.accounts-holder .delete:hover {
+  background-color: #b70000;
+}
+.accounts-holder .profile {
+  text-decoration: none;
+  color: black;
+}
+.accounts-holder .profile:hover {
+  text-decoration: underline;
+  color: orange;
+}
+.accounts-holder .red .status {
+  background-color: #d30101;
+  height: 24px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: whitesmoke;
+  font-weight: 900;
+  display: flex;
+}
+.accounts-holder .red .status p {
+  margin: auto;
+}
+.accounts-holder .yellow .status {
+  background-color: #d3c901;
+  height: 24px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: black;
+  font-weight: 900;
+  display: flex;
+}
+.accounts-holder .yellow .status p {
+  margin: auto;
+}
+.accounts-holder .blue .status {
+  background-color: #0175d3;
+  height: 24px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: whitesmoke;
+  font-weight: 900;
+  display: flex;
+}
+.accounts-holder .blue .status p {
+  margin: auto;
+}
+
+/*# sourceMappingURL=Accounts.css.map */

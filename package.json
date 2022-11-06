@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "concurrently": "^7.5.0",
+    "mobx": "^6.6.2",
+    "mobx-react": "^7.5.3"
+  }
+}

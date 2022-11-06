@@ -1,0 +1,67 @@
+.navigation {
+  height: 70px;
+  width: 100%;
+  background-color: #2f2f2f;
+  position: fixed;
+  display: flex;
+}
+.navigation .main-page {
+  display: flex;
+  text-decoration: none;
+  margin: auto 10px auto 30px;
+  height: 50px;
+  width: 90px;
+  border-radius: 7px;
+  border: 3px solid white;
+  color: #d03520;
+  font-weight: 900;
+  background-color: #282c34;
+}
+.navigation .main-page p {
+  margin: auto;
+}
+.navigation .accounts {
+  box-sizing: border-box;
+  text-align: center;
+  width: 100px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-weight: 700;
+}
+.navigation .accounts p {
+  margin: auto;
+}
+.navigation .accounts:hover {
+  color: #d03520;
+}
+.navigation .about {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  width: 100px;
+  height: 70px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-weight: 700;
+}
+.navigation .about p {
+  margin: auto;
+}
+.navigation .about:hover {
+  color: #d03520;
+}
+.navigation .selected {
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #d03520;
+}
+
+/*# sourceMappingURL=NavBar.css.map */

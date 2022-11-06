@@ -1,0 +1,93 @@
+.modal{
+  visibility: hidden;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top:0;
+  left: 0;
+  display: flex;
+
+  &__content{
+    padding: 20px;
+    border-radius: 12px;
+    background-color: white;
+    height: 600px;
+    width: 600px;
+    margin: auto;
+    padding: 0px;
+    .form-sub{
+      margin-top: 10px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+    .content-type{
+      display: flex;
+      padding-left: 20px;
+      border-bottom-width: 3px;
+      border-bottom-style: solid;
+      border-bottom-color: #595959;
+      .close{
+        margin: 10px 30px auto auto;
+        color: #595959;
+        font-weight: 700;
+        font-size: 24px;
+        cursor: pointer;
+      }
+      .close:hover{
+        color: #d03520;
+      }
+    }
+    .form-input{
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      input{
+        height: 24px;
+      }
+      select{
+        height: 24px;
+      }
+    }
+    .form-date{
+      margin-top: 10px;
+      display: flex;
+      &__block{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        input{
+          width: 200px;
+        }
+      }
+    }
+    .form-send{
+      margin: 100px 30px 0px auto;
+      .close{
+        background-color: #282c34;
+        color: white;
+        border: none;
+        height: 48px;
+        width: 70px;
+      }
+      .close:hover{
+        background-color: #595959;
+      }
+      .confirm{
+        background-color: #085fff;
+        color: white;
+        margin-right: 15px;
+        border: none;
+        height: 48px;
+        width: 70px;
+      }
+      .confirm:hover{
+        background-color: #6897f8;
+      }
+    }
+  }
+}
+.modal.active{
+  visibility: visible;
+}
