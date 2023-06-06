@@ -1,1 +1,10 @@
-<p>account works!</p>
+<div class="account-overlay"></div>
+<div class="account-wrapper">
+  <h1>{{account ? account.name: ''}}</h1>
+  <mat-list class="account-list">
+    <mat-list-item *ngFor="let item of fields">
+      <mat-icon matListItemIcon>{{ item.icon }}</mat-icon>
+      <div matListItemTitle><span class="item-prefix">{{item.title}}</span><span>{{ item.show(account) }}</span></div>
+    </mat-list-item>
+   </mat-list>
+</div>
