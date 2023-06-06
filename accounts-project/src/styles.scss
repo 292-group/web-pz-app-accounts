@@ -1,0 +1,62 @@
+/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+// variables
+$app-primary: mat.define-palette(mat.$cyan-palette, 500);
+$navbar-bg: #353539;
+$navbar-color: #fff;
+$blue: #0071ff;
+$tomato: #d82c44;
+$orange: #ffbd00;
+$delete-btn-bg: #616972;
+$edit-btn-bg: mat.get-color-from-palette($app-primary, 500);
+$light-font-color: #fff;
+$notification-color: #537c83;
+$notification-bg: #cee9f1;
+$thumb-color: #ccc;
+$thumb-color-hover: #c8cacf;
+$scrollbar-background: #f4f4f4;
+$border-radius: 2px;
+$dark-font-color: mat.get-color-from-palette($app-primary, 900);
+$close-btn-bg: #636571;
+$save-btn-bg: #45a1fa;
+$dark-orange: #d93f00;
+$dark-purple: #0e0f31;
+$light-purple: #9b75b9;
+$nav-height: 48px;
+
+// mixins
+@mixin md-scroll-bar(
+    $size: 8px,
+    $border-radius: 3px,
+    $thumb-color: $thumb-color,
+    $scrollbar-background: $scrollbar-background,
+    $thumb-color-hover: $thumb-color-hover
+) {
+    &::-webkit-scrollbar {
+        height: $size;
+        width: $size;
+        background: $scrollbar-background;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $thumb-color;
+        -webkit-border-radius: $border-radius; // rounded scroll thumb
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: $thumb-color-hover;
+    }
+}
+
+html, body { height: 100%;  }
+html {
+  overflow: auto;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  overflow: hidden;
+}
+
+

@@ -1,0 +1,83 @@
+<div class="list-wrapper">
+  <div class="page-header">
+    <h1>Account list</h1>
+    <button
+      mat-button
+      class="add-btn"
+      displayClass="flat"
+      (click)="createAccount()"
+    >Create Account</button>
+  </div>
+  <div class="page-body">
+    <div class="page-notification"> Total: {{dataSource.data.length}} </div>
+    <table
+          mat-table
+          [dataSource]="dataSource"
+      >
+        <!-- Name Column -->
+        <ng-container [matColumnDef]="fieldType.NAME">
+          <th mat-header-cell *matHeaderCellDef>Name</th>
+          <td mat-cell *matCellDef="let element">
+            <a (click)="navigateToAccount(element)"
+            >{{element[fieldType.NAME]}}</a>
+            </td>
+        </ng-container>
+
+        <!-- Account Name Column -->
+        <ng-container [matColumnDef]="fieldType.ACCOUNT_NAME">
+          <th mat-header-cell *matHeaderCellDef>Account name</th>
+          <td mat-cell *matCellDef="let element">{{element[fieldType.ACCOUNT_NAME]}}</td>
+        </ng-container>
+
+        <!-- Email Column -->
+        <ng-container [matColumnDef]="fieldType.EMAIL">
+          <th mat-header-cell *matHeaderCellDef>E-mail</th>
+          <td mat-cell *matCellDef="let element">{{element[fieldType.EMAIL]}}</td>
+        </ng-container>
+
+        <!-- Status Column -->
+        <ng-container [matColumnDef]="fieldType.STATUS">
+          <th mat-header-cell *matHeaderCellDef>Status</th>
+          <td mat-cell *matCellDef="let element">
+            <span [ngClass]="colorBinding[element[fieldType.STATUS]]">
+              {{element[fieldType.STATUS]}}
+            </span>
+          </td>
+        </ng-container>
+
+        <!-- Start date Column -->
+        <ng-container [matColumnDef]="fieldType.START_DATE">
+          <th mat-header-cell *matHeaderCellDef>Start Date</th>
+          <td mat-cell *matCellDef="let element">{{element[fieldType.START_DATE] * 1000 | date: 'd MMM y'}}</td>
+        </ng-container>
+
+        <!-- Expiration date Column -->
+        <ng-container [matColumnDef]="fieldType.EXPIRATION_DATE">
+          <th mat-header-cell *matHeaderCellDef>Expiration Date</th>
+          <td mat-cell *matCellDef="let element">{{element[fieldType.EXPIRATION_DATE] * 1000 | date: 'd MMM y'}}</td>
+        </ng-container>
+
+         <!-- Actions Column -->
+         <ng-container [matColumnDef]="fieldType.ACTIONS">
+          <th mat-header-cell *matHeaderCellDef></th>
+          <td mat-cell *matCellDef="let element" class="controls-cell">
+            <button
+              mat-button
+              displayClass="flat"
+              class="edit-btn"
+              (click)="editAccount(element.id)"
+            >Edit</button>
+            <button
+              mat-button
+              displayClass="flat"
+              class="delete-btn"
+              (click)="deleteAccount(element.id)"
+            >Delete</button>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </div>
+</div>

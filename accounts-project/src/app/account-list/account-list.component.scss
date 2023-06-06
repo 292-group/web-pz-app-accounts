@@ -1,0 +1,88 @@
+@import '/src/styles.scss';
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - $nav-height);
+  overflow-y: auto;
+  @include md-scroll-bar(6px);
+}
+.list-wrapper {
+  width: 60%;
+  height: 100%;
+}
+.controls-cell {
+  .edit-btn {
+    margin-right: 5px;
+    background-color: $edit-btn-bg;
+    color: $light-font-color;
+  }
+  .delete-btn {
+    background-color: $delete-btn-bg;
+    color: $light-font-color;
+  }
+}
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  .add-btn {
+    background-color: blue;
+    color: $light-font-color;
+  }
+}
+.mat-column-name a:hover {
+  cursor: pointer;
+}
+.mat-column-status span {
+  padding: 5px;
+  border-radius: 3px;
+  &.blue, &.tomato {
+    color: $light-font-color;
+  }
+  &.blue {
+    background-color: $blue;
+  }
+  &.orange {
+    background-color: $orange;
+    color: $dark-font-color;
+  }
+  &.tomato {
+    background-color: $tomato;
+  }
+}
+.page-body {
+  display: flex;
+  flex-direction: column;
+  .page-notification {
+    color: $notification-color;
+    background-color: $notification-bg;
+    padding: 20px 70px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .list-wrapper {
+      width: 80%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .list-wrapper {
+      width: 90%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .list-wrapper {
+      width: 100%;
+  }
+  .page-header {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .mat-column-email {
+    display: none;
+  }
+}

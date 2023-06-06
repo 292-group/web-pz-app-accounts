@@ -1,0 +1,30 @@
+@import '/src/styles.scss';
+.dialog-content {
+  padding: 20px 15px 0;
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.dialog-header {
+  padding: 10px 15px;
+  h2 {
+    margin: 0;
+  }
+}
+.dialog-footer {
+  display: flex;
+  justify-content: flex-end;
+  .close-btn, .save-btn {
+    color: $light-font-color;
+  }
+  .close-btn {
+    background-color: $close-btn-bg;
+  }
+  .save-btn {
+    background-color: $save-btn-bg;
+    &:disabled {
+      opacity: .5;
+    }
+  }
+}

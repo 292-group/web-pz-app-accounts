@@ -1,0 +1,17 @@
+<nav mat-tab-nav-bar [tabPanel]="tabPanel" mat-stretch-tabs="false" mat-align-tabs="start">
+  <button
+    class="navbar-brand"
+    mat-button
+    displayClass="flat"
+    (click)="navigate(type.ACCOUNTS)"
+  >WEB 22</button>
+  <a mat-tab-link *ngFor="let link of links"
+     [routerLink]="link.link"
+     (click)="navigateToSelected(link)"
+     [active]="activeLink == link.link"> {{link.title}} </a>
+</nav>
+<mat-tab-nav-panel #tabPanel>
+  <div class="tab-content">
+    <router-outlet></router-outlet>
+  </div>
+</mat-tab-nav-panel>

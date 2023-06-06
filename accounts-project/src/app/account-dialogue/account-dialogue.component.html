@@ -1,0 +1,62 @@
+<div class="dialog-header">
+  <h2>{{ data.title }}</h2>
+</div>
+<mat-divider></mat-divider>
+<div mat-dialog-content class="dialog-content">
+  <form [formGroup]="formGroup">
+       <!-- Name field -->
+      <text-input
+        appearance="fill"
+        [control]="nameField"
+        [required]="true"
+        [label]="'Name'"
+      ></text-input>
+      <!-- Account field -->
+      <text-input
+        appearance="fill"
+        [control]="accountField"
+        [required]="true"
+        [label]="'Account'"
+      ></text-input>
+      <!-- Status field -->
+      <mat-form-field appearance="fill">
+        <mat-label>Status</mat-label>
+        <mat-select
+          [formControl]="statusField"
+        >
+          <mat-option
+            *ngFor="let status of statuses"
+            [value]="status"
+          >{{ status }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <!-- Email field -->
+      <text-input
+        appearance="fill"
+        [type]="'email'"
+        [control]="emailField"
+        [required]="true"
+        [label]="'Email'"
+      ></text-input>
+      <date-picker
+        [startControl]="startControl"
+        [endControl]="endControl"
+      ></date-picker>
+  </form>
+</div>
+<mat-divider></mat-divider>
+<div mat-dialog-actions class="dialog-footer">
+  <button
+    mat-button
+    class="close-btn"
+    displayClass="flat"
+    (click)="close()"
+  >Close</button>
+  <button
+      mat-button
+      class="save-btn"
+      displayClass="flat"
+      [disabled]="formGroup.invalid"
+      (click)="save()"
+  >Save</button>
+</div>
