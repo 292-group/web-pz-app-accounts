@@ -61,3 +61,28 @@
     padding: 20px 70px;
   }
 }
+@media screen and (max-width: 1600px) {
+  .list-wrapper {
+      width: 80%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .list-wrapper {
+      width: 90%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .list-wrapper {
+      width: 100%;
+  }
+  .page-header {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .mat-column-email {
+    display: none;
+  }
+}

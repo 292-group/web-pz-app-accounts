@@ -36,3 +36,20 @@
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .about-page-wrapper .about-text {
+      width: 80%;
+      li {
+        width: 100%;
+      }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about-page-wrapper .about-text {
+      width: 100%;
+      li {
+        width: 100%;
+      }
+  }
+}
