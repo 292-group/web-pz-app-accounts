@@ -1,0 +1,33 @@
+@import '/src/styles.scss';
+
+mat-tab-nav-panel {
+  display: flex;
+  justify-content: center;
+  padding-top: $nav-height;
+}
+
+nav.mat-mdc-tab-header {
+  background-color: $navbar-bg;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  .mat-mdc-tab-links {
+    align-items: center;
+    padding: 0 10px;
+  }
+  button.navbar-brand.mat-mdc-button {
+    color: $dark-orange;
+    border: 1px solid $light-font-color;
+    border-radius: 3px;
+  }
+  .mat-mdc-tab-link .mdc-tab__text-label {
+    color: $light-font-color !important;
+  }
+  .mat-mdc-tab-link:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline {
+    border-color: $dark-orange;
+    border-width: 3px;
+  }
+}
+.tab-content {
+  width: 100%;
+}
